@@ -1,4 +1,4 @@
-// api.openweathermap.org/data/2.5/weather?q={city name}&appid={your api key}
+
 
 const weatherApi = {
     key: "bab281d79e5f1e9755a68d754cc313e7",
@@ -23,7 +23,7 @@ searchInputBox.addEventListener('click', (event) => {
 
 });
 
-// Get Weather Report
+
 function getWeatherReport(city) {
     fetch(`${weatherApi.baseUrl}?q=${city}&appid=${weatherApi.key}&units=metric`)
     .then(weather => {
@@ -34,7 +34,6 @@ function getWeatherReport(city) {
      } )
 }
 
-// Show Weather Report
 function showWeatherReport(weather){
     console.log(weather);
 
@@ -81,7 +80,7 @@ function showWeatherReport(weather){
     } 
 }
 
-// Date manage
+
 function dateManage(dateArg) {
 
     let days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
